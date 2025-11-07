@@ -1,0 +1,5 @@
+# Tout les fichiers et dossiers que l'on souhaite ignorer
+
+node_modules/
+
+.env
