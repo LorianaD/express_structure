@@ -5,8 +5,16 @@ module.exports = {
   async up (queryInterface, Sequelize) {
 
     await queryInterface.createTable('health_checks', {
-      id: { type: Sequelize.INTEGER, autoIcrement: true, primaryKey: true },
-      createdAt: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.fn('NOW')}
+      id: {
+        type: Sequelize.INTEGER,
+        autoIcrement: true,
+        primaryKey: true
+      },
+      createdAt: {
+        type: Sequelize.DATE,
+        allowNull: false, 
+        defaultValue: Sequelize.fn('NOW')
+      }
     })
   },
 
